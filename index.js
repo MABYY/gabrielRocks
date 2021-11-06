@@ -1,8 +1,8 @@
 require("dotenv").config() // invoke and run config method. we want the side effect
                             // this allows to inject environment variables  
 
-const PORT  =  process.env.PORT || 5000 
-// const {PORT}  = require('./config')
+// const PORT  =  process.env.PORT || 5000 
+const {PORT}  = require('./config')
 const express = require("express")
 const cors = require("cors")
 const helmet = require("helmet")
